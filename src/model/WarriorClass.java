@@ -1,6 +1,6 @@
 package model;
 
-public class WarriorClass implements BasicClassesInterface{
+public class WarriorClass extends StartingClass implements BasicClassesInterface{
     public WarriorClass() {
 
         System.out.println("Creating a Warrior.");

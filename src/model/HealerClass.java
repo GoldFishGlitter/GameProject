@@ -1,6 +1,6 @@
 package model;
 
-public class HealerClass implements BasicClassesInterface{
+public class HealerClass extends StartingClass implements BasicClassesInterface{
     public HealerClass() {
 
         System.out.println("Creating a Healer.");

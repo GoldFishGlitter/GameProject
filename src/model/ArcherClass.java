@@ -1,6 +1,6 @@
 package model;
 
-public class ArcherClass implements BasicClassesInterface{
+public class ArcherClass extends StartingClass implements BasicClassesInterface{
     public ArcherClass() {
 
         System.out.println("Creating an Archer.");
