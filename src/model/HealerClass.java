@@ -1,6 +1,11 @@
 package model;
 
 public class HealerClass implements BasicClassesInterface{
+    public HealerClass() {
+
+        System.out.println("Creating a Healer.");
+    }
+
     @Override
     public void basicAttack() {
         System.out.println("Healer has attacked.");

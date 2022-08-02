@@ -1,6 +1,11 @@
 package model;
 
 public class ArcherClass implements BasicClassesInterface{
+    public ArcherClass() {
+
+        System.out.println("Creating an Archer.");
+    }
+
     @Override
     public void basicAttack() {
         System.out.println("Archer has attacked.");

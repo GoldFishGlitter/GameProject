@@ -1,7 +1,7 @@
 package model;
 
 public interface BasicClassesInterface {
-    void basicAttack();
-    void basicParry();
-    void basicDefense();
+    public void basicAttack();
+    public void basicParry();
+    public void basicDefense();
 }
