@@ -1,23 +1,28 @@
 package model;
 
 public class WarriorClass extends StartingClass implements BasicClassesInterface{
+    public WarriorClass(final String name) {
+
+        super(name);
+        System.out.println("Creating a Warrior.");
+    }
+
     public WarriorClass() {
 
-        System.out.println("Creating a Warrior.");
     }
 
     @Override
     public void basicAttack() {
-        System.out.println("Warrior has attacked.");
+        System.out.println("Warrior " + getName() + " has attacked.");
     }
 
     @Override
     public void basicParry() {
-        System.out.println("Warrior has parried.");
+        System.out.println("Warrior " + getName() + " has parried.");
     }
 
     @Override
     public void basicDefense() {
-        System.out.println("Warrior has defended.");
+        System.out.println("Warrior " + getName() + " has defended.");
     }
 }
