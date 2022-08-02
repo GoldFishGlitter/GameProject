@@ -1,5 +1,5 @@
 package model;
 
-public class StartingClass {
+public abstract class StartingClass {
 
 }
