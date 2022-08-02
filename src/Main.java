@@ -10,5 +10,7 @@ public class Main {
         WarriorClass warrior2 = new WarriorClass("Draco");
         warrior1.basicAttack();
         warrior2.basicDefense();
+
+        
     }
 }

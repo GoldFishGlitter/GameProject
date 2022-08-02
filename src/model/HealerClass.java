@@ -1,6 +1,6 @@
 package model;
 
-public class HealerClass extends StartingClass implements BasicClassesInterface{
+public class HealerClass extends MageClass{
     public HealerClass(final String name) {
 
         super(name);
@@ -13,16 +13,16 @@ public class HealerClass extends StartingClass implements BasicClassesInterface{
 
     @Override
     public void basicAttack() {
-        System.out.println("Healer " + getName() + " has attacked.");
-    }
-
-    @Override
-    public void basicParry() {
-        System.out.println("Healer " + getName() + " has parried.");
+        super.basicAttack();
     }
 
     @Override
     public void basicDefense() {
-        System.out.println("Healer " + getName() + " has defended.");
+        super.basicDefense();
+    }
+
+    @Override
+    public void basicParry() {
+        super.basicParry();
     }
 }
