@@ -1,6 +1,10 @@
 package model;
 
-public class WarriorClass extends StartingClass implements BasicClassesInterface{
+public class WarriorClass extends StartingClass implements BasicClassesInterface {
+    int warriorBaseATK = 20;
+    int warriorBaseHP = 150;
+    int warriorBaseMP = 10;
+
     public WarriorClass(final String name) {
 
         super(name);

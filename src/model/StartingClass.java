@@ -9,7 +9,7 @@ public abstract class StartingClass {
 
     public StartingClass(final String name) {
 
-        System.out.println("Initializing constructor.");
+        //System.out.println("Initializing constructor.");
         this.name = name;
     }
 

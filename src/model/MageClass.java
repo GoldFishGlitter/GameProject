@@ -1,6 +1,10 @@
 package model;
 
 public class MageClass extends StartingClass implements BasicClassesInterface{
+    int mageBaseATK = 10;
+    int mageBaseHP = 95;
+    int mageBaseMP = 40;
+
     public MageClass(final String name) {
 
         super(name);

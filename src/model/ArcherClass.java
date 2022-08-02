@@ -1,6 +1,10 @@
 package model;
 
 public class ArcherClass extends StartingClass implements BasicClassesInterface{
+    int archerBaseATK = 35;
+    int archerBaseHP = 80;
+    int archerBaseMP = 25;
+
     public ArcherClass(final String name) {
 
         super(name);
