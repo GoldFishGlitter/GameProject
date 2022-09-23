@@ -14,11 +14,12 @@
     <hr>
     <h2>Save Shop</h2>
 
-    <form action="#" th:action="@{/save}" th:object="${shop}"
+    <!--/*@thymesVar id="ItemShop" type="com.unitbv.module2.repository.ItemShop"*/-->
+    <form action="#" th:action="@{/save}" th:object="${ItemShop}"
           method="POST">
         <input type="text" th:field="*{name}" placeholder="Shop Name"
                class="form-control mb-4 col-4"> <input type="text"
-                                                       th:field="*{specialty}" placeholder="Shop Specialty"
+                                                       th:field="*{shopSpecialty}" placeholder="Shop Specialty"
                                                        class="form-control mb-4 col-4">
 
         <button type="submit" class="btn btn-info col-2">Save

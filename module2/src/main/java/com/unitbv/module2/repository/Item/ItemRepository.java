@@ -6,5 +6,5 @@ import java.util.*;
 
 public interface ItemRepository extends CrudRepository<Item, Integer> {
 
-    Optional<Item> findByName(String string);
+    Optional<Item> findByName(String name);
 }

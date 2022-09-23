@@ -15,7 +15,7 @@ import javax.validation.constraints.*;
 @Entity
 public class ItemShop {
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
     @NotBlank

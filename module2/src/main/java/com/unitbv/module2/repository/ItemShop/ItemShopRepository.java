@@ -6,5 +6,5 @@ import java.util.*;
 
 public interface ItemShopRepository extends PagingAndSortingRepository<ItemShop, Integer> {
 
-    Optional<ItemShop> findByName(String string);
+    Optional<ItemShop> findByName(String name);
 }

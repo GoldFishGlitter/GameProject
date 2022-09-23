@@ -13,15 +13,16 @@
     <hr>
     <h2>Update Shop</h2>
 
-    <form action="#" th:action="@{/save}" th:object="${itemshop}"
+    <!--/*@thymesVar id="ItemShop" type="com.unitbv.module2.repository.ItemShop"*/-->
+    <form action="#" th:action="@{/save}" th:object="${ItemShop}"
           method="POST">
 
         <!-- Add hidden form field to handle update -->
         <input type="hidden" th:field="*{id}" />
 
-        <input type="text" th:field="*{Name}" class="form-control mb-4 col-4">
+        <input type="text" th:field="*{name}" class="form-control mb-4 col-4">
 
-        <input type="text" th:field="*{Specialty}" class="form-control mb-4 col-4">
+        <input type="text" th:field="*{shopSpecialty}" class="form-control mb-4 col-4">
 
         <button type="submit" class="btn btn-info col-2"> Update Shop</button>
     </form>

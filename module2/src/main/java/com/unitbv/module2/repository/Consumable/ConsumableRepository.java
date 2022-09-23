@@ -7,5 +7,5 @@ import java.util.*;
 
 public interface ConsumableRepository extends CrudRepository<Consumable, Integer> {
 
-    Optional<Item> findByName(String string);
+    Optional<Item> findByName(String name);
 }

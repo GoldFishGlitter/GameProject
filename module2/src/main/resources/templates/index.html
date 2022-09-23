@@ -19,16 +19,16 @@
         <tr >
             <th>Name</th>
             <th>Specialty</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
-        <!--/*@thymesVar id="allItemList" type="com.unitbv.module2.thymeleaf"*/-->
-        <tr th:each="itemshop:${allItemList}">
-            <td th:text="${itemshop.name}"></td>
-            <td th:text="${itemshop.specialty}"></td>
-            <td> <a th:href="@{/showFormForUpdateShop/{id}(id=${itemshop.id})}"
+        <tr th:each="ItemShop:${allShops.content}">
+            <td th:text="${ItemShop.name}"></td>
+            <td th:text="${ItemShop.shopSpecialty}"></td>
+            <td> <a th:href="@{/updateShopById/{id}(id=${ItemShop.id})}"
                     class="btn btn-primary">Update</a>
-                <a th:href="@{/deleteShop/{id}(id=${itemshop.id})}"
+                <a th:href="@{/deleteShopById/{id}(id=${ItemShop.id})}"
                    class="btn btn-danger">Delete</a>
             </td>
         </tr>
